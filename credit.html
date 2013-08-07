@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+-->
+</style>
+<link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <form id="form1" name="form1" method="post" action="/InsertCredit">
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="450" border="0" cellpadding="10" cellspacing="0" id="head">
+      <tr>
+        <td width="150" align="center" bgcolor="#FFFF66">Course</td>
+        <td width="150" align="center" bgcolor="#FFFF66">Notification</td>
+        <td width="150" align="center" bgcolor="#FFFF66">Credits</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFF66">
+
+      <table width="900" border="0" cellpadding="10" cellspacing="0" id="row3">
+        <tr align="center">
+          <td width="200"><label>
+            <input type="text" name="keyword" id="keyword" />
+          </label></td>
+          <td width="250">Faculity
+            <label>
+              <select name="faculity" id="faculity">
+                <option value="EG">Engineering</option>
+                <option value="BA">Business Administration </option>
+                <option value="IT">Information Technology</option>
+              </select>
+            </label></td>
+          <td>Department
+            <label>
+              <select name="department" id="department">
+                <option value="IT">IT</option>
+                <option value="MT">MT</option>
+                <option value="BI">BI</option>
+                <option value="BA">BA</option>
+                <option value="IM">IM</option>
+                <option value="IB">IB</option>
+                <option value="BJ">BJ</option>
+                <option value="CE">CE</option>
+                <option value="PE">PE</option>
+                <option value="AE">AE</option>
+                <option value="EE">EE</option>
+                <option value="AC">AC</option>
+              </select>
+            </label></td>
+          <td width="120">Years 
+            <label>
+              <select name="year" id="year">
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+              </select>
+            </label></td>
+          <td width="110">Semester 
+            <label>
+              <select name="semester" id="semester">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </label></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#FFFF66"><table width="600" border="0" cellspacing="0" cellpadding="10">
+      <tr>
+        <td width="250">Group Name</td>
+        <td width="100">Tuition Free</td>
+        <td>Flat Rate</td>
+      </tr>
+      <tr>
+        <td width="250"><label>
+          <input type="text" name="group_name" id="group_name" />
+        </label></td>
+        <td width="100">&nbsp;</td>
+        <td><label>
+          <input type="radio" name="tuition" id="price" value="flat_rate" />
+          <input type="text" name="flat_rate" id="flat_rate" />
+        </label></td>
+      </tr>
+      <tr>
+        <td width="250">Faculity</td>
+        <td width="100">&nbsp;</td>
+        <td>Price per Credit</td>
+      </tr>
+      <tr>
+        <td width="250"><label>
+          <select name="faculity2" id="faculity2">
+            <option value="engineering">Engineering</option>
+            <option value="information technology">Information technology</option>
+            <option value="business">Business </option>
+          </select>
+        </label></td>
+        <td width="100">&nbsp;</td>
+        <td><label>
+          <input type="radio" name="tuition" id="price2" value="price_per_credit" />
+          <input type="text" name="price_per_credit" id="price_per_credit" />
+        </label></td>
+      </tr>
+      <tr>
+        <td width="250">Department</td>
+        <td width="100">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="250"><select name="department2" id="department2">
+          <option value="IT">IT</option>
+          <option value="MT">MT</option>
+          <option value="BI">BI</option>
+          <option value="BA">BA</option>
+          <option value="IM">IM</option>
+          <option value="IB">IB</option>
+          <option value="BJ">BJ</option>
+          <option value="CE">CE</option>
+          <option value="PE">PE</option>
+          <option value="AE">AE</option>
+          <option value="EE">EE</option>
+          <option value="AC">AC</option>
+        </select></td>
+        <td width="100">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#FFFF66"><label>
+      <input type="submit" name="add_group" id="add_group" value="Add Group" />
+    </label></td>
+  </tr>    
+</table>
+  </form>
+</body>
+</html>
