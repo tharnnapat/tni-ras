@@ -52,18 +52,20 @@ class InsertCredit(webapp2.RequestHandler):
 			tuition = flat_rate 
 		else:
 			tuition = price_per_credit
-		# self.response.write(group_name)
-		# self.response.write(faculity)
-		# self.response.write(department)
-		# self.response.write(flat_rate)
-		# self.response.write(price_per_credit)
-		# self.response.write(tuition)
+
 
 		conn = rdbms.connect(instance=_INSTANCE_NAME, database='Prinya_Project')
     		cursor = conn.cursor()
-		cursor.execute("""INSERT into creditprice (faculity,department,creditprice.group,price) 
+		cursor.execute("""insert into creditprice (faculity,department,creditprice.group,price) 
             values (%s,%s,%s,%s)""",(faculity,department,group_name,tuition))
 
+		self.response.write(group_name)
+		self.response.write(faculity)
+		self.response.write(department)
+		self.response.write(flat_rate)
+		self.response.write(price_per_credit)
+		self.response.write(tuition)
+		
 		conn.close();
 
 app = webapp2.WSGIApplication([
